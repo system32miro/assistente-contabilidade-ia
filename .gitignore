@@ -5,9 +5,11 @@ __pycache__/
 # Ambientes virtuais
 venv/
 env/
+.venv/
 
 # Ficheiros de configuração local
 config.json
+.env
 
 # Logs e ficheiros temporários
 *.log
@@ -16,3 +18,6 @@ config.json
 # Ficheiros do sistema operativo
 .DS_Store
 Thumbs.db
+
+# Ficheiros de análise de faturas
+*_analise.json
