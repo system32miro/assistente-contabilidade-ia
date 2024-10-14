@@ -1,0 +1,30 @@
+[
+    {
+        "nome_arquivo": "modelo_categorias_20241003_125915.joblib",
+        "data_treino": "2024-10-03 12:59:15",
+        "metricas": {
+            "data": "2024-10-03 12:59:15",
+            "accuracy": 0.9983333333333333,
+            "precision": 0.9983739837398373,
+            "recall": 0.9983333333333333,
+            "f1": 0.9983327988883544
+        }
+    },
+    {
+        "nome_arquivo": "modelo_categorias_20241003_171147.joblib",
+        "data_treino": "2024-10-03 17:11:47",
+        "metricas": {
+            "melhores_parametros": {
+                "clf__max_depth": 20,
+                "clf__n_estimators": 100,
+                "tfidf__max_features": 1000,
+                "tfidf__ngram_range": [
+                    1,
+                    1
+                ]
+            },
+            "relatorio_classificacao": "                                        precision    recall  f1-score   support\n\n    Despesas de Transporte e Log\u00edstica       1.00      1.00      1.00        47\n                  Energia e Utilidades       1.00      1.00      1.00        36\n             Equipamentos Inform\u00e1ticos       1.00      1.00      1.00        28\n            Forma\u00e7\u00e3o e Desenvolvimento       1.00      1.00      1.00        40\n             Licenciamento de Software       1.00      1.00      1.00        50\n                Material de Escrit\u00f3rio       1.00      1.00      1.00        40\nMobili\u00e1rio e Equipamento de Escrit\u00f3rio       1.00      1.00      1.00        35\n                               Seguros       1.00      1.00      1.00        39\n                    Servi\u00e7os Jur\u00eddicos       1.00      1.00      1.00        47\n                 Servi\u00e7os de Auditoria       1.00      1.00      1.00        38\n               Servi\u00e7os de Consultoria       1.00      1.00      1.00        40\n             Servi\u00e7os de Contabilidade       1.00      1.00      1.00        39\n                Servi\u00e7os de Manuten\u00e7\u00e3o       1.00      1.00      1.00        36\n                 Servi\u00e7os de Marketing       1.00      1.00      1.00        41\n                      Telecomunica\u00e7\u00f5es       1.00      1.00      1.00        44\n\n                              accuracy                           1.00       600\n                             macro avg       1.00      1.00      1.00       600\n                          weighted avg       1.00      1.00      1.00       600\n",
+            "validacao_cruzada": "Acur\u00e1cia m\u00e9dia: 1.00 (+/- 0.00)"
+        }
+    }
+]

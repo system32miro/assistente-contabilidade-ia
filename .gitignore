@@ -1,0 +1,18 @@
+# Ficheiros Python compilados
+__pycache__/
+*.py[cod]
+
+# Ambientes virtuais
+venv/
+env/
+
+# Ficheiros de configuração local
+config.json
+
+# Logs e ficheiros temporários
+*.log
+*.tmp
+
+# Ficheiros do sistema operativo
+.DS_Store
+Thumbs.db

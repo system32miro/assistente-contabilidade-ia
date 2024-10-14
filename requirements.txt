@@ -1,0 +1,12 @@
+flask
+flask-cors
+requests
+python-dotenv
+ttkbootstrap
+pdfplumber
+PyPDF2
+pandas
+scikit-learn
+joblib
+nltk
+schedule==1.1.0
