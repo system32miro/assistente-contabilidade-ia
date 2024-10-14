@@ -59,7 +59,7 @@ Este projeto utiliza a API Groq com o modelo Llama 3.2 11B Vision para processam
 
 ## Estrutura do Projeto
 
-- `main.py`: Ponto de entrada do aplicativo
+- `main.py`: Ponto de entrada da app
 - `gui.py`: Interface gráfica do utilizador
 - `pdf_processor.py`: Processamento e extração de texto de faturas em PDF
 - `categorizador.py`: Categorização automática de itens de faturas
@@ -67,7 +67,7 @@ Este projeto utiliza a API Groq com o modelo Llama 3.2 11B Vision para processam
 - `api_handler.py`: Integração com a API Groq e lógica do assistente IA
 - `config.py`: Configurações globais e constantes
 - `data.py`: Geração de dados sintéticos para treino do modelo
-- `treinar_modelo_categorias.py`: Treinamento e avaliação do modelo de categorização
+- `treinar_modelo_categorias.py`: Treino e avaliação do modelo de categorização
 - `treino_agendado.py`: Sistema de treino automático e agendado
 
 ## Testes
