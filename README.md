@@ -4,11 +4,11 @@ Este projeto implementa um assistente de contabilidade baseado em IA que permite
 
 ## Funcionalidades
 
-- Upload e análise automática de faturas
-- Categorização de despesas
+- Upload e análise automática de faturas em PDF
+- Categorização automática de despesas
 - Verificação de obrigações fiscais
 - Interação com agente IA para questões contabilísticas
-- Utilização da API Groq para processamento de linguagem natural
+- Utilização da API Groq com o modelo Llama 3.2 11B Vision para processamento de linguagem natural e análise de imagens
 
 ## Pré-requisitos
 
@@ -40,11 +40,11 @@ Este projeto implementa um assistente de contabilidade baseado em IA que permite
 
 ## Configuração da API Groq
 
-Este projeto utiliza a API Groq para processamento de linguagem natural. Para configurar:
+Este projeto utiliza a API Groq com o modelo Llama 3.2 11B Vision para processamento de linguagem natural e análise de imagens. Para configurar:
 
 1. Obtenha uma chave de API em [Groq API](https://console.groq.com/)
 2. Adicione a chave ao arquivo `.env` conforme descrito acima
-3. O modelo utilizado é o `mixtral-8x7b-32768`, que é carregado automaticamente no código
+3. O modelo Llama 3.2 11B Vision é utilizado automaticamente pela API
 
 ## Utilização
 
@@ -53,16 +53,33 @@ Este projeto utiliza a API Groq para processamento de linguagem natural. Para co
    python main.py
    ```
 
-2. Use o botão "Upload Fatura" para carregar faturas para análise.
+2. Use o botão "Upload Fatura" para carregar faturas em PDF para análise.
 3. Interaja com o assistente digitando mensagens na área de entrada.
 4. Siga as instruções no ecrã para realizar ações adicionais após o upload de faturas.
 
 ## Estrutura do Projeto
 
 - `main.py`: Ponto de entrada do aplicativo
-- `gui.py`: Interface gráfica do usuário
-- `fatura_processor.py`: Processamento e análise de faturas
-- `ia_agent.py`: Integração com a API Groq e lógica do assistente IA
+- `gui.py`: Interface gráfica do utilizador
+- `pdf_processor.py`: Processamento e extração de texto de faturas em PDF
+- `categorizador.py`: Categorização automática de itens de faturas
+- `tax_analyzer.py`: Análise fiscal e cálculos relacionados a impostos
+- `api_handler.py`: Integração com a API Groq e lógica do assistente IA
+- `config.py`: Configurações globais e constantes
+- `data.py`: Geração de dados sintéticos para treino do modelo
+- `treinar_modelo_categorias.py`: Treinamento e avaliação do modelo de categorização
+- `treino_agendado.py`: Sistema de treino automático e agendado
+
+## Testes
+
+Para executar os testes unitários e de integração, use o comando:
+```
+python run_tests.py
+```
+
+## Treino Agendado
+
+O sistema inclui um módulo de treino agendado (`treino_agendado.py`) que atualiza periodicamente o modelo de categorização com novos dados.
 
 ## Contribuições
 
