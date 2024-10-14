@@ -1,40 +1,46 @@
-# Assistente de Contabilidade Português
+# Assistente de Contabilidade IA
 
-## Visão Geral
-Este projeto implementa um assistente de contabilidade especializado na legislação portuguesa. Ele oferece funcionalidades como processamento de faturas, categorização automática de despesas e lembretes de prazos fiscais.
+Este projeto implementa um assistente de contabilidade baseado em IA que permite o upload e análise de faturas, bem como a interação com um agente de IA para questões contabilísticas.
 
-## Novas Funcionalidades: Sistema de Categorização Automática
+## Funcionalidades
 
-### Descrição
-O sistema agora inclui um modelo de aprendizado de máquina para categorização automática de itens de fatura. Esta funcionalidade utiliza técnicas de processamento de linguagem natural (NLP) e aprendizado de máquina para classificar automaticamente as despesas em categorias predefinidas.
+- Upload e análise automática de faturas
+- Categorização de despesas
+- Verificação de obrigações fiscais
+- Interação com agente IA para questões contabilísticas
 
-### Componentes Principais
-1. **Pré-processamento de Texto**: Implementado na função `preprocess_text()`, que limpa e prepara o texto para análise.
-2. **Carregamento de Dados**: A função `carregar_dados()` lê e prepara os dados de treinamento.
-3. **Treinamento do Modelo**: Realizado pela função `treinar_modelo()`, que utiliza um pipeline de TfidfVectorizer e RandomForestClassifier.
-4. **Categorização**: A função `categorizar_item()` utiliza o modelo treinado para prever a categoria de novos itens.
+## Instalação
 
-### Como Funciona
-1. O sistema carrega ou treina um modelo de categorização durante a inicialização.
-2. Ao processar uma fatura, cada item é automaticamente categorizado.
-3. A categorização é integrada ao fluxo de análise de faturas, fornecendo sugestões de categoria para cada item.
+1. Clone o repositório:
+   ```
+   git clone https://github.com/seu-usuario/assistente-contabilidade-ia.git
+   ```
 
-### Benefícios
-- Agiliza o processo de categorização de despesas.
-- Melhora a consistência na classificação de itens.
-- Reduz erros humanos no processo de categorização.
+2. Navegue até à pasta do projeto:
+   ```
+   cd assistente-contabilidade-ia
+   ```
 
-### Uso
-O sistema de categorização é utilizado automaticamente durante o processamento de faturas. Não é necessária nenhuma ação adicional do usuário para ativar esta funcionalidade.
+3. Instale as dependências:
+   ```
+   pip install -r requirements.txt
+   ```
 
-## Instalação e Execução
-(Mantenha as instruções existentes de instalação e execução)
+## Utilização
 
-## Dependências
-(Atualize a lista de dependências, incluindo as novas bibliotecas necessárias para o sistema de categorização)
+1. Execute o ficheiro `main.py`:
+   ```
+   python main.py
+   ```
 
-## Contribuição
-(Mantenha as instruções existentes para contribuição)
+2. Use o botão "Upload Fatura" para carregar faturas para análise.
+3. Interaja com o assistente digitando mensagens na área de entrada.
+4. Siga as instruções no ecrã para realizar ações adicionais após o upload de faturas.
+
+## Contribuições
+
+Contribuições são bem-vindas! Por favor, abra um issue para discutir alterações importantes antes de submeter um pull request.
 
 ## Licença
-(Mantenha as informações de licença existentes)
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
